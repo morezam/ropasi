@@ -10,16 +10,42 @@
 	<body>
 		<div class="score">0</div>
 		<div class="container">
-			<p class="el rock">rock</p>
-			<p class="el paper">paper</p>
-			<p class="el si">si</p>
+			<div class="rock-cont cont-click">
+				<img src="img/icon-rock.svg" class="el rock" id="rock" />
+				<span class="white"></span>
+				<span class="bright bright-rock"></span>
+				<span class="dark dark-rock"></span>
+			</div>
+			<div class="paper-cont cont-click">
+				<img src="img/icon-paper.svg" class="el paper" id="paper" />
+				<span class="white"></span>
+				<span class="bright bright-paper"></span>
+				<span class="dark dark-paper"></span>
+			</div>
+			<div class="scissors-cont cont-click">
+				<img src="img/icon-scissors.svg" class="el scissors" id="scissors" />
+				<span class="white"></span>
+				<span class="bright bright-scissors"></span>
+				<span class="dark dark-scissors"></span>
+			</div>
+
+			<img src="img/bg-triangle.svg" class="triangle" />
 		</div>
 		<div class="show">
-			<div class="picked">you picked <span class="hide"></span></div>
-			<div class="house">house picked <span class="hhide"></span></div>
+			<div class="picked select">
+				you picked
+				<span class="hide circle"></span>
+			</div>
+			<div class="play">
+				<p class="message">&nbsp;</p>
+				<button class="btn">play again</button>
+			</div>
+			<div class="house select">
+				house picked
+				<span class="hhide circle"> </span>
+			</div>
 		</div>
-		<p class="message"></p>
-		<button>plau again</button>
+
 		<script src="index.js"></script>
 	</body>
 </html>
