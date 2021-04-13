@@ -5,10 +5,27 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+			rel="stylesheet"
+		/>
+
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<div class="score">0</div>
+		<div class="score-cont">
+			<div class="score-ps">
+				<p>rock</p>
+				<p>paper</p>
+				<p>scissors</p>
+			</div>
+			<div class="score-score">
+				<p class="score-p">score</p>
+				<div class="score">0</div>
+			</div>
+		</div>
+		<div class="rules">rules</div>
 		<div class="container">
 			<div class="rock-cont cont-click">
 				<img src="img/icon-rock.svg" class="el rock" id="rock" />
@@ -43,6 +60,14 @@
 			<div class="house select">
 				house picked
 				<span class="hhide circle"> </span>
+			</div>
+		</div>
+
+		<div class="rules-cont">
+			<div class="rules-white">
+				<p class="rules-p">rules</p>
+				<img src="img/image-rules.svg" alt="" class="rules-img" />
+				<img src="img/icon-close.svg" alt="" class="rules-close" />
 			</div>
 		</div>
 

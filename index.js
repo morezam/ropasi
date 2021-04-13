@@ -7,6 +7,9 @@ const hide = document.querySelector('.hide');
 const hhide = document.querySelector('.hhide');
 const message = document.querySelector('.message');
 const play = document.querySelector('.play');
+const rules = document.querySelector('.rules');
+const rulesCont = document.querySelector('.rules-cont');
+const rulesClose = document.querySelector('.rules-close');
 const contClick = document.querySelectorAll('.cont-click');
 const button = document.querySelector('button');
 const si = document.querySelector('.si');
@@ -84,3 +87,6 @@ button.addEventListener('click', () => {
 	show.style.display = 'none';
 	container.style.display = 'block';
 });
+
+rules.addEventListener('click', () => (rulesCont.style.display = 'flex'));
+rulesClose.addEventListener('click', () => (rulesCont.style.display = 'none'));
